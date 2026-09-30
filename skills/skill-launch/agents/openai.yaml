@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Launch"
-  short_description: "Research, build, publish, and verify a public Agent Skill."
-  default_prompt: "Use $skill-launch to choose and launch a differentiated public Agent Skill end to end."

@@ -10,7 +10,7 @@ Independent builders and domain experts who want skills to serve as useful open-
 
 ## Product promise
 
-Given explicit launch authorization, Skill Launch researches the market, selects a narrow gap, builds a complete repository, publishes it, and proves each release layer separately.
+Given explicit launch authorization, Skill Create researches the market, selects a narrow gap, builds a complete repository, publishes it, and proves each release layer separately.
 
 ## Principles
 

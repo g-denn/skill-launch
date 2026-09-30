@@ -3,7 +3,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = (ROOT / "skills" / "skill-launch" / "SKILL.md").read_text(encoding="utf-8")
+SKILL = (ROOT / "skills" / "skill-create" / "SKILL.md").read_text(encoding="utf-8")
 
 
 class SkillContractTests(unittest.TestCase):

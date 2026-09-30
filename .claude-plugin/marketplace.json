@@ -1,16 +1,16 @@
 {
-  "name": "skill-launch",
+  "name": "skill-create",
   "owner": {
     "name": "G-Den"
   },
   "plugins": [
     {
-      "name": "skill-launch",
+      "name": "skill-create",
       "source": "./",
       "description": "Research, build, publish, and verify a public Agent Skill.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "skills": [
-        "./skills/skill-launch"
+        "./skills/skill-create"
       ]
     }
   ]

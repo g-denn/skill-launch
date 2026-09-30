@@ -1,19 +1,19 @@
-# Skill Launch
+# Skill Create
 
 Launch a useful Agent Skill as a public, installable GitHub repository—with evidence for every release layer.
 
-`skill-launch` helps an agent research an underserved job, compare candidate ideas, build the smallest credible skill, publish it, and verify that strangers can actually install it. It keeps brainstorming, local building, and public launch as separate authorization modes.
+`skill-create` helps an agent research an underserved job, compare candidate ideas, build the smallest credible skill, publish it, and verify that strangers can actually install it. It keeps brainstorming, local building, and public launch as separate authorization modes.
 
 ## Install
 
 ```bash
-npx skills add g-denn/skill-launch --skill skill-launch
+npx skills add g-denn/skill-create --skill skill-create
 ```
 
 Then ask:
 
 ```text
-Use $skill-launch to research, build, publish, and verify a public skill for a narrow problem in my domain.
+Use $skill-create to research, build, publish, and verify a public skill for a narrow problem in my domain.
 ```
 
 ## What it verifies
@@ -31,8 +31,8 @@ It will not publish without explicit launch authorization. Repository publicatio
 
 ## Repository layout
 
-- [`skills/skill-launch/SKILL.md`](skills/skill-launch/SKILL.md) — agent instructions
-- [`skills/skill-launch/references`](skills/skill-launch/references) — selection, release, and distribution contracts
+- [`skills/skill-create/SKILL.md`](skills/skill-create/SKILL.md) — agent instructions
+- [`skills/skill-create/references`](skills/skill-create/references) — selection, release, and distribution contracts
 - [`scripts/validate.py`](scripts/validate.py) — dependency-free repository checks
 - [`tests/test_contract.py`](tests/test_contract.py) — contract tests
 

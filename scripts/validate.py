@@ -5,8 +5,8 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "skills" / "skill-launch" / "SKILL.md"
-OPENAI = ROOT / "skills" / "skill-launch" / "agents" / "openai.yaml"
+SKILL = ROOT / "skills" / "skill-create" / "SKILL.md"
+OPENAI = ROOT / "skills" / "skill-create" / "agents" / "openai.yaml"
 MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
 
 
@@ -21,22 +21,22 @@ def main() -> None:
     if not match:
         fail("SKILL.md requires YAML frontmatter")
     frontmatter = match.group(1)
-    if "name: skill-launch" not in frontmatter:
-        fail("frontmatter name must be skill-launch")
+    if "name: skill-create" not in frontmatter:
+        fail("frontmatter name must be skill-create")
     if "description:" not in frontmatter:
         fail("frontmatter description is required")
     if "[TODO" in skill_text:
         fail("SKILL.md contains an unfinished TODO placeholder")
 
     openai_text = OPENAI.read_text(encoding="utf-8")
-    for required in ('display_name: "Skill Launch"', 'default_prompt: "Use $skill-launch'):
+    for required in ('display_name: "Skill Create"', 'default_prompt: "Use $skill-create'):
         if required not in openai_text:
             fail(f"openai.yaml missing {required}")
 
     data = json.loads(MARKETPLACE.read_text(encoding="utf-8"))
     plugin = data["plugins"][0]
-    if plugin["name"] != "skill-launch" or "./skills/skill-launch" not in plugin["skills"]:
-        fail("marketplace metadata does not expose skill-launch")
+    if plugin["name"] != "skill-create" or "./skills/skill-create" not in plugin["skills"]:
+        fail("marketplace metadata does not expose skill-create")
 
     for path in (
         ROOT / "README.md",
@@ -48,7 +48,7 @@ def main() -> None:
         if not path.is_file():
             fail(f"missing {path.relative_to(ROOT)}")
 
-    print("skill-launch repository validation passed")
+    print("skill-create repository validation passed")
 
 
 if __name__ == "__main__":

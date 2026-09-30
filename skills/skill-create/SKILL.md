@@ -1,9 +1,9 @@
 ---
-name: skill-launch
+name: skill-create
 description: "Research, design, build, publish, and verify a differentiated Agent Skill as a public GitHub repository. Use when the user explicitly asks to create and launch a new skill end to end for usefulness, discoverability, distribution, or GitHub adoption. Do not use for brainstorming-only requests, local-only prototypes, or installing an existing skill."
 ---
 
-# Skill Launch
+# Skill Create
 
 Turn a useful, narrow idea into a public, installable Agent Skill. Optimize for repeated usefulness and trust. Stars are an outcome, not an acceptance test.
 
